@@ -1,6 +1,6 @@
 # vscode-server-centos7-simple
 
-English | 中文
+english | 中文
 --- | ---
 Patch VS Code Server to run on RHEL/CentOS 7 style systems. | 为 VS Code Server 提供补丁，使其可在 RHEL/CentOS 7 类系统运行。
 
@@ -10,7 +10,7 @@ After each local VS Code upgrade (and server files are downloaded once), run thi
 每次本地 VS Code 升级后（并已完成一次服务器文件下载），在远端服务器执行：
 
 ```bash
-cd /path/to/vscode-server-centos7-simple
+cd ~/vscode-server-centos7-simple
 chmod +x ./vscode-server-centos7-simple.sh ./scripts/*.sh
 sed -i 's/\r$//' ./vscode-server-centos7-simple.sh ./scripts/*.sh
 ./vscode-server-centos7-simple.sh
