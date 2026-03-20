@@ -38,9 +38,9 @@ VSCODE_GNU_DIR=/custom/gnu \
    如果 `VSCODE_GNU_DIR` 为 `<server-dir>/gnu`，会自动跳过自复制。
 3. Patches ELF interpreter from system loader to bundled loader.  
    将 ELF interpreter 从系统 loader 改为项目内置 loader。
-4. Best-effort creates skip-check flags in `/tmp`:
+4. Best-effort creates skip-check flags in `/tmp`: 
    尽量在 `/tmp` 下创建跳过检查标记：
-   - `/tmp/vscode-skip-server-requirements-check`。
+   - `/tmp/vscode-skip-server-requirements-check`
 
 ## Scripts | 脚本说明
 - `vscode-server-centos7-simple.sh`: one-command entrypoint | 一键注入脚本
