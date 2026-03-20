@@ -31,7 +31,7 @@ VSCODE_GNU_DIR=/custom/gnu \
 - GNU runtime files present in `VSCODE_GNU_DIR`  
   `VSCODE_GNU_DIR` 中包含 GNU 运行文件
 
-## What It Does | 执行内容
+## What It Does | 脚本逻辑
 1. Copies GNU runtime files into `<server-dir>/gnu` when needed.  
    将 GNU 运行时文件复制到 `<server-dir>/gnu`。
 2. If `VSCODE_GNU_DIR` already equals `<server-dir>/gnu`, it skips self-copy automatically.  
