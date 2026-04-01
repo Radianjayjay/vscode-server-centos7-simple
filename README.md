@@ -4,6 +4,9 @@ English | 中文
 Patch VS Code Server to run on RHEL/CentOS 7 style systems. | 为 VS Code Server 修补，使得可以在 RHEL/CentOS 7 类系统运行。
 
 ## Quick Start | 快速开始
+This project patches an existing VS Code Server installation. If `~/.vscode-server` does not exist yet, connect once from local VS Code first so the server files are downloaded.  
+这个项目用于修补已经存在的 VS Code Server 安装。如果 `~/.vscode-server` 还不存在，请先从本地 VS Code 连接一次，让服务端文件先下载下来。
+
 After each local VS Code upgrade, run this on the remote server:  
 每次本地 VS Code 升级后，在远端服务器执行：
 
@@ -28,6 +31,8 @@ VSCODE_GNU_DIR=/custom/gnu \
 ## Requirements | 程序依赖
 - `patchelf` available in `PATH`  
   `PATH` 中可用 `patchelf`
+- Existing server files under `VSCODE_SERVER_DIR`  
+  `VSCODE_SERVER_DIR` 下需要已有服务端文件
 - GNU runtime files present in `VSCODE_GNU_DIR`  
   `VSCODE_GNU_DIR` 中包含 GNU 运行文件
 
